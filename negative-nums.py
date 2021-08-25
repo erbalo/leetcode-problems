@@ -4,7 +4,7 @@ Implement a function that given an array of integers returns another array with 
 Example:
 Input: [-1, -2, -3] => Output: []
 Input: [-3, 2, -1, -4, 3, -2, 1, 5] => Output: [1, 2, 3]
-Input: [-2, -2, 1,-1] => [2], correcto sería []
+Input: [-2, -2, 1,-1] => []
 """
 array = [-2, -2]
 array = [-1, -2, -3] 
@@ -34,14 +34,14 @@ def v1(array):
     for i in range(len(array)):
         to_find = array[i] * -1
         
-        if x(array, to_find):
+        if findV1(array, to_find):
             set_list.add(abs(to_find))
 
     print(list(set_list)) # convertir el set a array
 
 
 
-def x(array, elem: int) -> bool:
+def findV1(array, elem: int) -> bool:
     founded = False
     for i in range(len(array)):
         if elem == array[i]:
