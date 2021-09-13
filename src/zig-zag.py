@@ -34,7 +34,7 @@ class Solution:
                 
                 if lin == 0 or lin == numRows - 1:
                     pl *= -1
-                    
+        # New comment
 
         output = ""
         
