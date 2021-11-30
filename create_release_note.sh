@@ -1,6 +1,4 @@
 #!/bin/bash
-export GREN_GITHUB_TOKEN={GIT_TOKEN}
-
 echo $GREN_GITHUB_TOKEN
 
 if [ -z $GREN_GITHUB_TOKEN ]; then
@@ -10,3 +8,4 @@ if [ -z $GREN_GITHUB_TOKEN ]; then
 fi
 
 gren changelog --generate --override
+gren release --override

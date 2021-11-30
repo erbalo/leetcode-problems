@@ -1,7 +1,24 @@
 ---
   dataSource: "commits"
-  ignoreLabels: []
-  ignoreIssuesWith: 
-    - "duplicate"
-    - "question"
   changelogFilename: "CHANGELOG.md"
+  onlyMilestones: false
+  includeMessages: "all"
+  ignoreIssuesWith:
+    - "support"
+  ignoreLabels:
+    - "duplicate"
+    - "invalid"
+    - "wontfix"
+  groupBy:
+    New features:
+      - "feature"
+    Bug Fixes:
+      - "bug"
+    Enhancements:
+      - "enhancement"
+    Internationalisation:
+      - "i18n"
+    Theme Meta:
+      - "meta"
+    Uncategorised:
+      - "closed"
