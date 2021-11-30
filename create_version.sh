@@ -8,7 +8,8 @@ Help() {
     echo "Syntax: ./$file_name [-M | -m | -p | -h ]"
     echo "options:"
     echo
-    echo "-h | help     Print this Help."
+    echo "-h | help     print this help"
+    echo "-i | init     initial version"
     echo "-M | major    upgrading a major version ex. vX.0.0"
     echo "-m | minor    upgrading a minor version ex. v0.X.0"
     echo "-p | patch    upgrading a patch version ex. v0.0.X"
