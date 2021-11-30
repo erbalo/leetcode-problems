@@ -1,5 +1,6 @@
 #!/bin/bash
-echo $GREN_GITHUB_TOKEN
+PARAM_PREVIOUS_VERSION=$1
+PARAM_CURRENT_VERSION=$2
 
 if [ -z $GREN_GITHUB_TOKEN ]; then
     echo "Access token should be an environment variable."
@@ -7,5 +8,5 @@ if [ -z $GREN_GITHUB_TOKEN ]; then
     exit 1
 fi
 
-gren changelog --generate --override
-gren release --override
+gren changelog --generate --override --tags=$PARAM_PREVIOUS_VERSION..$PARAM_CURRENT_VERSION
+gren release --override --tags=$PARAM_PREVIOUS_VERSION..$PARAM_CURRENT_VERSION
