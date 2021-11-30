@@ -1,5 +1,5 @@
 ---
-  dataSource: "commits"
+  dataSource: "prs"
   changelogFilename: "CHANGELOG.md"
   onlyMilestones: false
   includeMessages: "all"
@@ -22,3 +22,5 @@
       - "meta"
     Uncategorised:
       - "closed"
+  template:
+    group: "\n#### {{heading}}\n"
