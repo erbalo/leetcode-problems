@@ -1,0 +1,7 @@
+---
+  dataSource: "commits"
+  ignoreLabels: []
+  ignoreIssuesWith: 
+    - "duplicate"
+    - "question"
+  changelogFilename: "CHANGELOG.md"

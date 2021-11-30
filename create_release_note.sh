@@ -9,4 +9,4 @@ if [ -z $GREN_GITHUB_TOKEN ]; then
     exit 1
 fi
 
-gren release
+gren changelog --generate --override
