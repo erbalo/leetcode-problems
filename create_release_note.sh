@@ -12,6 +12,6 @@ fi
 
 set -x
 #gren changelog --generate --override --tags=$PARAM_PREVIOUS_VERSION..$PARAM_CURRENT_VERSION
-gren changelog --generate --override --tags=$PARAM_CURRENT_VERSION
 gren release --override --tags=$PARAM_CURRENT_VERSION
+gren changelog --override
 set +x
