@@ -22,5 +22,9 @@
       - "meta"
     Uncategorised:
       - "closed"
+    Ericki:
+      - "removes"
   template:
     group: "\n#### {{heading}}\n"
+    release: "## {{release}} ({{date}})\n{{body}}"
+    releaseSeparator: "\n---\n\n"
