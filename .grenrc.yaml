@@ -10,23 +10,16 @@
     - "invalid"
     - "wontfix"
   groupBy:
-    New features:
-      - "[FEATURE]"
-    Bug Fixes:
-      - "bug"
-    Enhancements:
-      - "enhancement"
-    Internationalisation:
-      - "i18n"
-    Theme Meta:
-      - "meta"
-    Test:
+    🚀 New features:
+      - "feature"
       - "closed"
-    Ericki:
-      - "removes"
+    👾 Fixes:
+      - "bug"
+      - "fix"
   template:
-    group: "\n#### {{heading}}\n"
+    group: "\n## {{heading}}\n"
     commit: "-> [{{message}}]({{url}}) - {{author}} : {{name}}"
-    release: "## {{release}} ({{date}})\n{{body}}"
+    release: "##:D {{release}} ({{date}})\n{{body}}"
     releaseSeparator: "\n---\n\n"
-    issue: "- :D {{labels}} {{name}} [{{text}}]({{url}}) {{author}} {{body}} {{message}} {{release}} {{date}}"
+    issue: "- [{{text}}]({{url}}) `{{name}}` by [@{{user_login}}]({{user_url}}) \n\n{{body}}"
+    changelogTitle: "# :Das Changelog\n\n"
