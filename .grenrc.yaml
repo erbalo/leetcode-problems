@@ -12,14 +12,17 @@
   groupBy:
     🚀 New features:
       - "feature"
-      - "closed"
     👾 Fixes:
       - "bug"
       - "fix"
+    ☠️ Hotfixes:
+      - "hotfix"
+    Uncategorized:
+      - "closed"
   template:
     group: "\n## {{heading}}\n"
     commit: "-> [{{message}}]({{url}}) - {{author}} : {{name}}"
     release: "##:D {{release}} ({{date}})\n{{body}}"
     releaseSeparator: "\n---\n\n"
-    issue: "- [{{text}}]({{url}}) `{{name}}` by [@{{user_login}}]({{user_url}}) \n\n{{body}}"
+    issue: "- [{{text}}]({{url}}) `{{name}}` by [@{{user_login}}]({{user_url}})"
     changelogTitle: "# :Das Changelog\n\n"
