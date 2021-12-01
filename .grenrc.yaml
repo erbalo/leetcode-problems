@@ -11,7 +11,7 @@
     - "wontfix"
   groupBy:
     New features:
-      - "feature"
+      - "[FEATURE]"
     Bug Fixes:
       - "bug"
     Enhancements:
@@ -20,11 +20,13 @@
       - "i18n"
     Theme Meta:
       - "meta"
-    Uncategorised:
+    Test:
       - "closed"
     Ericki:
       - "removes"
   template:
     group: "\n#### {{heading}}\n"
+    commit: "-> [{{message}}]({{url}}) - {{author}} : {{name}}"
     release: "## {{release}} ({{date}})\n{{body}}"
     releaseSeparator: "\n---\n\n"
+    issue: "- :D {{labels}} {{name}} [{{text}}]({{url}}) {{author}} {{body}} {{message}} {{release}} {{date}}"
