@@ -1,7 +1,7 @@
 # Changelog
 
-## v1.2.2 (30/11/2021)
+## v1.2.3 (30/11/2021)
 
-#### Uncategorised
+#### Test
 
-- [**closed**] Removes echo token [#5](https://github.com/erbalo/leetcode-problems/pull/5)
+- :D [**closed**] [FEATURE] [CW-89789] updates grenrc [#6](https://github.com/erbalo/leetcode-problems/pull/6) {{author}} test {{message}} {{release}} {{date}}
